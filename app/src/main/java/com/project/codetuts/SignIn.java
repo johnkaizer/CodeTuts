@@ -116,50 +116,90 @@ public class SignIn extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
             }
         });
-        forgotPassword.setOnClickListener(new View.OnClickListener() {
+//        forgotPassword.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                AlertDialog.Builder builder= new AlertDialog.Builder(SignIn.this);
+//                View dialogView = getLayoutInflater().inflate(R.layout.dialog_forgot,null);
+//                EditText emailBox = dialogView.findViewById(R.id.emailBox);
+//
+//
+//                builder.setView(dialogView);
+//                AlertDialog dialog = builder.create();
+//
+//                dialogView.findViewById(R.id.btnReset).setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        String userEmail = emailBox.getText().toString();
+//                        if (TextUtils.isEmpty(userEmail) && !Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()){
+//                            Toast.makeText(SignIn.this,"Enter your registered email address",Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        mAuth.sendPasswordResetEmail(userEmail).addOnCompleteListener(new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                if (task.isSuccessful()){
+//                                    Toast.makeText(SignIn.this,"Check your email",Toast.LENGTH_SHORT).show();
+//                                    dialog.dismiss();
+//                                }else {
+//                                    Toast.makeText(SignIn.this,"Unable to send, Failed",Toast.LENGTH_SHORT).show();
+//                                }
+//                            }
+//                        });
+//                    }
+//                });
+//                dialogView.findViewById(R.id.cancelButton).setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//                if (dialog.getWindow() != null){
+//                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+//                }
+//                dialog.show();
+//            }
+//        });
+    }
+    public void password(View view) {
+        AlertDialog.Builder builder= new AlertDialog.Builder(SignIn.this);
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_forgot,null);
+        EditText emailBox = dialogView.findViewById(R.id.emailBox);
+
+
+        builder.setView(dialogView);
+        AlertDialog dialog = builder.create();
+
+        dialogView.findViewById(R.id.btnReset).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder= new AlertDialog.Builder(SignIn.this);
-                View dialogView = getLayoutInflater().inflate(R.layout.dialog_forgot,null);
-                EditText emailBox = dialogView.findViewById(R.id.emailBox);
-
-
-                builder.setView(dialogView);
-                AlertDialog dialog = builder.create();
-
-                dialogView.findViewById(R.id.btnReset).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        String userEmail = emailBox.getText().toString();
-                        if (TextUtils.isEmpty(userEmail) && !Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()){
-                            Toast.makeText(SignIn.this,"Enter your registered email address",Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        mAuth.sendPasswordResetEmail(userEmail).addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()){
-                                    Toast.makeText(SignIn.this,"Check your email",Toast.LENGTH_SHORT).show();
-                                    dialog.dismiss();
-                                }else {
-                                    Toast.makeText(SignIn.this,"Unable to send, Failed",Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-                    }
-                });
-                dialogView.findViewById(R.id.cancelButton).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.dismiss();
-                    }
-                });
-                if (dialog.getWindow() != null){
-                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+                String userEmail = emailBox.getText().toString();
+                if (TextUtils.isEmpty(userEmail) && !Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()){
+                    Toast.makeText(SignIn.this,"Enter your registered email address",Toast.LENGTH_SHORT).show();
+                    return;
                 }
-                dialog.show();
+                mAuth.sendPasswordResetEmail(userEmail).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()){
+                            Toast.makeText(SignIn.this,"Check your email",Toast.LENGTH_SHORT).show();
+                            dialog.dismiss();
+                        }else {
+                            Toast.makeText(SignIn.this,"Unable to send, Failed",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
             }
         });
+        dialogView.findViewById(R.id.cancelButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        if (dialog.getWindow() != null){
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        }
+        dialog.show();
     }
-
 }
