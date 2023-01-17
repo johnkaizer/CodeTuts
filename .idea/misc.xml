@@ -6,10 +6,14 @@
         <entry key="..\:/CodeTuts/app/src/main/res/drawable-v24/btn_back.xml" value="0.1" />
         <entry key="..\:/CodeTuts/app/src/main/res/drawable-v24/edit_text_back.xml" value="0.1" />
         <entry key="..\:/CodeTuts/app/src/main/res/drawable-v24/gradient_backgrnd.xml" value="0.1" />
+        <entry key="..\:/CodeTuts/app/src/main/res/drawable/restore_24.xml" value="0.1" />
+        <entry key="..\:/CodeTuts/app/src/main/res/drawable/round.xml" value="0.1" />
+        <entry key="..\:/CodeTuts/app/src/main/res/drawable/white_box.xml" value="0.1" />
         <entry key="..\:/CodeTuts/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
         <entry key="..\:/CodeTuts/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/CodeTuts/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/CodeTuts/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/CodeTuts/app/src/main/res/layout/dialog_forgot.xml" value="0.1734375" />
       </map>
     </option>
   </component>

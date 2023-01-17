@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050249294685",
+    "project_id": "codetuts-9e6ec",
+    "storage_bucket": "codetuts-9e6ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050249294685:android:7c018a36044a9ef7b12eb4",
+        "android_client_info": {
+          "package_name": "com.project.codetuts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050249294685-0g789rssnkfu2k1csct7dvv7b71ggtj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA63C6NPouc8l7iqZX9QXK6RIrFg-lbJ7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050249294685-0g789rssnkfu2k1csct7dvv7b71ggtj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

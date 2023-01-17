@@ -80,7 +80,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
-                android:onClick="password"
                 android:text="forgot password?"
                 android:textColor="@color/black"
                 android:textSize="16sp"
