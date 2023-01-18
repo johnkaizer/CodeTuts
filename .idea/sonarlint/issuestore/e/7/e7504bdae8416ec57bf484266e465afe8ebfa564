@@ -1,0 +1,28 @@
+
+E
+java:S10661"/Merge this if statement with the enclosing one.(ó’’Ë
+=
+java:S1604,"(Make this anonymous inner class a lambda(‚»è
+C
+java:S1604e"(Make this anonymous inner class a lambda(ü»×¬ıÿÿÿÿ
+?
+java:S1604µ"(Make this anonymous inner class a lambda(’¿Î
+D
+java:S1604­"(Make this anonymous inner class a lambda(Ÿ¼êÒüÿÿÿÿ
+D
+java:S1604Â"(Make this anonymous inner class a lambda(¼ó÷Çøÿÿÿÿ
+m	java:S116"XRename this field "EditTextEmail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ÙÊ…
+D
+java:S1659".Declare "editTextPassword" on a separate line.(°ÙÊ…
+c	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİóü
+A
+java:S1172L"+Remove this unused method parameter "view".(óİóü
+A
+java:S1172Q"+Remove this unused method parameter "view".(½‹“¥
+N
+java:S1854i"8Remove this useless assignment to local variable "user".(—ÓÛ
+?
+java:S1481i")Remove this unused "user" local variable.(—ÓÛ
+V	java:S125w"<This block of commented-out lines of code should be removed.(äâ°µÿÿÿÿÿ
+B
+java:S1172¤"+Remove this unused method parameter "view".(ÂÇøÙ
