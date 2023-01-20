@@ -10,22 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.project.codetuts.databinding.FragmentSlideshowBinding;
+import com.project.codetuts.databinding.FragmentDownloadBinding;
+import com.project.codetuts.databinding.FragmentHomeBinding;
+
 
 public class DownloadFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentDownloadBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentDownloadBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         return root;
     }
 
