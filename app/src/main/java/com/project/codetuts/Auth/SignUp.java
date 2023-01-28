@@ -1,4 +1,4 @@
-package com.project.codetuts;
+package com.project.codetuts.Auth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.project.codetuts.Model.User;
-
-import java.util.Objects;
+import com.project.codetuts.R;
 
 public class SignUp extends AppCompatActivity {
     private FirebaseAuth mAuth;

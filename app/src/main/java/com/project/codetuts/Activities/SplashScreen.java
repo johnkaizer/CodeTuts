@@ -1,10 +1,13 @@
-package com.project.codetuts;
+package com.project.codetuts.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.project.codetuts.Auth.SignIn;
+import com.project.codetuts.R;
 
 public class SplashScreen extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.project.codetuts;
+package com.project.codetuts.Auth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -23,6 +23,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.project.codetuts.Activities.MainActivity;
+import com.project.codetuts.R;
 
 public class SignIn extends AppCompatActivity {
     TextView forgotPassword;

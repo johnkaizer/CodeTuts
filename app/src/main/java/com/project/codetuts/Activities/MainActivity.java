@@ -1,12 +1,10 @@
-package com.project.codetuts;
+package com.project.codetuts.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
@@ -18,6 +16,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.project.codetuts.Auth.SignIn;
+import com.project.codetuts.R;
 import com.project.codetuts.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
